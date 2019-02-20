@@ -1,14 +1,12 @@
 <template>
   <Layout>
-    <header>
+    <section>
       <div class="content">
         <h1>Zack Cuddy</h1>
         <h3>Developer.</h3>
       </div>
-      <div class="img-container">
-        <g-image src="/images/Header.jpg"/>
-      </div>
-    </header>
+      <div class="img-container" />
+    </section>
   </Layout>
 </template>
 
@@ -19,21 +17,14 @@ export default {
 </script>
 
 <style scoped>
-  h1, h3 {
-    margin: 0;
-  }
-  header {
+  section {
     display: flex;
     height: 100vh;
-    background-image: url('/images/Code BG.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #212121;
   }
 
   .content {
-    font-size: 1.7em;
-    flex: 2;
+    font-size: 2em;
+    flex: 1;
     color: #F5F5F5;
     margin: auto;
     text-align: center;
@@ -41,9 +32,9 @@ export default {
 
   .img-container {
     flex: 1;
-  }
-
-  img {
-    height: 100vh;
+    background-position: 50%;
+    background-image: url('/images/Header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 </style>

@@ -26,10 +26,21 @@ query {
 <style>
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: 'Rubik',-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 300vh;
+  font-family: 'Rubik', sans-serif;
   margin:0;
   padding:0;
   line-height: 1.5;
+  background-image: url('/images/Code BG2.png');
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #212121;
 }
 </style>
