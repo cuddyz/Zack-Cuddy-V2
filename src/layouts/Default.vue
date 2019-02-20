@@ -37,7 +37,7 @@ body {
   margin:0;
   padding:0;
   line-height: 1.5;
-  background-image: url('/images/Code BG2.png');
+  background-image: url('/images/Background.png');
   background-position-x: 50%;
   background-repeat: no-repeat;
   background-size: cover;

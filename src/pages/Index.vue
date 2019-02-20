@@ -33,7 +33,7 @@ export default {
   .img-container {
     flex: 1;
     background-position: 50%;
-    background-image: url('/images/Header.jpg');
+    background-image: url('/images/Hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
