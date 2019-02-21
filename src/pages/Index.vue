@@ -1,20 +1,20 @@
 <template>
   <Layout>
-    <section class="flex">
+    <article class="flex">
       <div class="content text-center m-a flex-1">
         <h1>Zack Cuddy</h1>
         <h3>Developer.</h3>
       </div>
       <div class="img-container flex-1" />
-    </section>
+    </article>
   </Layout>
 </template>
 
 <style lang="scss" scoped>
 @import '../assets/styles/colors.scss';
 
-  section {
-    height: 100vh;
+  article {
+    min-height: 100vh;
 
     .content {
       font-size: 2em;
