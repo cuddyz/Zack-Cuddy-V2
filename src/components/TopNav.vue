@@ -1,11 +1,11 @@
 <template>
     <nav class="mx-2 flex align-center">
         <g-link :to="{ name: 'home' }">
-            <g-image src="/images/logo_transparent.png" width="100px" />
+            <g-image class="logo" src="/images/logo_transparent.png" width="100px" />
         </g-link>
         <div class="links">
-            <g-link class="pl-1" :to="{ name: 'portfolio' }">Portfolio</g-link>
-            <g-link class="pl-1" :to="{ name: 'contact' }">Contact</g-link>
+            <g-link :to="{ name: 'portfolio' }">Portfolio</g-link>
+            <g-link :to="{ name: 'contact' }">Contact</g-link>
         </div>
     </nav>
 </template>
@@ -23,12 +23,25 @@ export default {
         top: 4rem;
         height: 0;
         
+        .logo {
+            &:hover {
+                width: 110px;
+                cursor: pointer;
+            }
+        }
+        
         .links {
             a {
+                padding-left: 1rem;
                 text-transform: uppercase;
                 color: color(white);
                 text-decoration: none;
                 font-size: 1.5em;
+
+                &:hover {
+                    cursor: pointer;
+                    font-size: 1.6em;
+                }
             }
         }
     }
