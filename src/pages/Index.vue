@@ -1,40 +1,31 @@
 <template>
   <Layout>
-    <section>
-      <div class="content">
+    <section class="flex">
+      <div class="content text-center m-a flex-1">
         <h1>Zack Cuddy</h1>
         <h3>Developer.</h3>
       </div>
-      <div class="img-container" />
+      <div class="img-container flex-1" />
     </section>
   </Layout>
 </template>
 
-<script>
-export default {
- // ..
-}
-</script>
+<style lang="scss" scoped>
+@import '../assets/styles/colors.scss';
 
-<style scoped>
   section {
-    display: flex;
     height: 100vh;
-  }
 
-  .content {
-    font-size: 2em;
-    flex: 1;
-    color: #F5F5F5;
-    margin: auto;
-    text-align: center;
-  }
+    .content {
+      font-size: 2em;
+      color: color(white);
+    }
 
-  .img-container {
-    flex: 1;
-    background-position: 50%;
-    background-image: url('/images/Hero.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    .img-container {
+      background-position: 50%;
+      background-image: url('/images/Hero.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 </style>
