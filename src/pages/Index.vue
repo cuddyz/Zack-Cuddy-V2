@@ -11,6 +11,7 @@
           <a href="https://twitter.com/zack_cuddy" target="_blank"><i class="fab fa-twitter" /></a>
           <a href="https://www.linkedin.com/in/zcuddy/" target="_blank"><i class="fab fa-linkedin-in" /></a>
           <a href="https://github.com/cuddyz" target="_blank"><i class="fab fa-github" /></a>
+          <a href="mailto:zcuddy23@gmail.com"><i class="far fa-envelope" /></a>
         </div>
       </div>
       <div class="img-container flex-1" />
