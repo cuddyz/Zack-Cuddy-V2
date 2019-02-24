@@ -35,6 +35,11 @@ export default {
             a {
                 padding-left: 1rem;
                 text-transform: uppercase;
+                font-size: 1.5em;
+
+                &:hover {
+                    font-size: 1.6em;
+                }
             }
         }
     }
