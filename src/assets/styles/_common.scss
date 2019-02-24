@@ -1,6 +1,6 @@
 body {
   // Layout
-  height: 300vh;
+  min-height: 100vh;
   max-width: 100vw;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -9,7 +9,7 @@ body {
 
   // Font
   font-size: 1rem;
-  color: color(black);
+  color: color(white);
   font-family: 'Rubik', sans-serif;
   line-height: 1.5;
 
@@ -76,4 +76,15 @@ button {
             cursor: default;
         }
     }
+}
+
+a {
+  color: color(white);
+  text-decoration: none;
+  font-size: 1.5em;
+
+  &:hover {
+    cursor: pointer;
+    font-size: 1.6em;
+  }
 }

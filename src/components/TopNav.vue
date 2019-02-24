@@ -4,6 +4,7 @@
             <g-image class="logo" src="/images/logo_transparent.png" width="100px" />
         </g-link>
         <div class="links">
+            <g-link :to="{ name: 'about' }">About</g-link>
             <g-link :to="{ name: 'portfolio' }">Portfolio</g-link>
             <g-link :to="{ name: 'contact' }">Contact</g-link>
         </div>
@@ -34,14 +35,6 @@ export default {
             a {
                 padding-left: 1rem;
                 text-transform: uppercase;
-                color: color(white);
-                text-decoration: none;
-                font-size: 1.5em;
-
-                &:hover {
-                    cursor: pointer;
-                    font-size: 1.6em;
-                }
             }
         }
     }
