@@ -14,15 +14,13 @@ module.exports = function (api) {
   api.loadSource(async store => {
 
     const promises = []
-    promises.push(axios.get(`https://cdn.contentful.com/spaces/${spaceId}/entries?access_token=${accessToken}`))
     promises.push(axios.get(`https://cdn.contentful.com/spaces/${spaceId}/assets?access_token=${accessToken}`))
+    promises.push(axios.get(`https://cdn.contentful.com/spaces/${spaceId}/entries?access_token=${accessToken}`))
 
     await Promise.all(promises).then(res => {
-      let projects = res[0].data
-      projects = projects.items
+      const assets = res[0].data.items
 
-      let assets = res[1].data
-      assets = assets.items
+      const projects = res[1].data.items
 
       const assetType = store.addContentType({
         typeName: 'ProjectAssets'
