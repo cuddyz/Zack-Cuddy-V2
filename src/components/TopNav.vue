@@ -25,6 +25,7 @@ export default {
         height: 0;
         
         .logo {
+            width: 100px;
             &:hover {
                 width: 110px;
                 cursor: pointer;
