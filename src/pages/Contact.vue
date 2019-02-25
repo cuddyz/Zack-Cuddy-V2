@@ -72,7 +72,7 @@ export default {
     grid-gap: 1rem;
     justify-items: center;
     align-content: center;
-    margin: 3rem 1rem 1rem 1rem;
+    margin: 5rem 1rem 1rem 1rem;
 
     form {
       text-align: center;
