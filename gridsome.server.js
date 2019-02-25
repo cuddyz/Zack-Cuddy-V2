@@ -24,12 +24,22 @@ module.exports = function (api) {
       let assets = res[1].data
       assets = assets.items
 
-      const projectType = store.addContentType({
-        typeName: 'Projects'
-      })
-
       const assetType = store.addContentType({
         typeName: 'ProjectAssets'
+      })
+
+      for (const item of assets) {
+        assetType.addNode({
+          id: item.sys.id,
+          title: item.fields.title,
+          fields: {
+            url: item.fields.file.url,
+          }
+        })
+      }
+
+      const projectType = store.addContentType({
+        typeName: 'Projects'
       })
 
 
@@ -39,17 +49,7 @@ module.exports = function (api) {
           title: item.fields.title,
           fields: {
             url: item.fields.url,
-            image: item.fields.image
-          }
-        })
-      }
-
-      for (const item of assets) {
-        assetType.addNode({
-          id: item.sys.id,
-          title: item.fields.title,
-          fields: {
-            url: item.fields.file.url,
+            image: store.createReference('ProjectAssets', item.fields.image.sys.id)
           }
         })
       }
