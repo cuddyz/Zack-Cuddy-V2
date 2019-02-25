@@ -1,9 +1,9 @@
 <template>
     <Layout>
         <article>
-          <a v-for="edge in $page.projects.edges.reverse()" :key="edge.node.id" :href="edge.node.url" target="_blank">
-            <div class="img-container mb-1" :style="{ 'background-image': `url(${edge.node.image.url})` }" :aria-label="edge.node.title" />
-            <h2>{{ edge.node.title }}</h2>
+          <a v-for="project in projects" :key="project.node.id" :href="project.node.url" target="_blank">
+            <div class="img-container mb-1" :style="{ 'background-image': `url(${project.node.image.url})` }" :aria-label="project.node.title" />
+            <h2>{{ project.node.title }}</h2>
           </a>
         </article>
     </Layout> 
@@ -28,7 +28,12 @@ query Projects {
 
 <script>
 export default {
-    name: 'Portfolio'
+    name: 'Portfolio',
+    computed: {
+      projects: function() {
+        return this.$page.projects.edges.reverse()
+      }
+    }
 }
 </script>
 
