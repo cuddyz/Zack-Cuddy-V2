@@ -34,31 +34,38 @@ export default {
 
   article {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(45vw, 1fr));
+    grid-template-columns: auto;
     grid-gap: 1rem;
-    margin: 10rem 1rem 0 1rem;
+    margin: 7rem 1rem 0 1rem;
 
     @media (min-width: breaks(phablet)) {
       margin: 10rem 4rem 0 4rem;
+    }
+
+    @media (min-width: breaks(laptop)) {
+      grid-template-columns: repeat(auto-fill, minmax(45vw, 1fr));
     }
 
     section:first-child {
       color: color(black);
       background-color: color(white);
       border-radius: 5px;
-      padding: 4rem;
+      padding: 1rem;
       font-size: 0.8em;
 
       @media (min-width: breaks(phone)) {
         font-size: 1em;
+        padding: 2rem;
       }
 
       @media (min-width: breaks(tablet)) {
         font-size: 1.2em;
+        padding: 3rem;
       }
 
       @media (min-width: breaks(megawide)) {
         font-size: 1.4em;
+        padding: 4rem;
       }
 
 
@@ -82,8 +89,13 @@ export default {
         background-position-y: 20%;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 15rem;
-        width: 15rem;
+        height: 10rem;
+        width: 10rem;
+
+        @media (min-width: breaks(phablet)) {
+          height: 15rem;
+          width: 15rem;
+        }
 
         @media (min-width: breaks(tablet)) {
           height: 20rem;
@@ -99,8 +111,13 @@ export default {
       &:first-child {
         img {
           background-image: url('/images/Us.jpg');
-          height: 25rem;
-          width: 25rem;
+          height: 20rem;
+          width: 20rem;
+
+          @media (min-width: breaks(phablet)) {
+            height: 25rem;
+            width: 25rem;
+         }
 
           @media (min-width: breaks(tablet)) {
             height: 30rem;
