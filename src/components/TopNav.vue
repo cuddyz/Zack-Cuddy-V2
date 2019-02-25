@@ -22,7 +22,7 @@ export default {
 @import '../assets/styles/breaks.scss';
 
     nav {
-        position: sticky;
+        position: absolute;
         top: 4rem;
         height: 0;
         
