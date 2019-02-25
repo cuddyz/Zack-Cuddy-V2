@@ -2,7 +2,7 @@
   <Layout>
     <section>
       <div class="f-2 flex column flex-center">
-        <div class="flex-1 flex column flex-center w-100">
+        <div class="flex-1 flex column flex-center w-100 info">
           <h1>Zack Cuddy</h1>
           <h3>Developer.</h3>
         </div>
@@ -53,6 +53,18 @@ export default {
       align-content: inherit;
     }
 
+    .info {
+      font-size: 0.8em;
+
+      @media (min-width: breaks(phablet)) {
+        font-size: 0.9em;
+      }
+      
+      @media (min-width: breaks(tablet)) {
+        font-size: 1em;
+      }
+    }
+
     .social {
       position: fixed;
       bottom: 0;
@@ -61,11 +73,22 @@ export default {
     }
 
     a {
-      font-size: 1.1em;
-      margin: 0 2rem;
+      font-size: 1.0em;
+      margin: 0 1.5rem;
 
       &:hover {
-        font-size: 1.2em;
+        font-size: 1.1em;
+      }
+    }
+
+    @media (min-width: breaks(laptop)) {
+      a {
+        font-size: 1.1em;
+        margin: 0 2rem;
+
+        &:hover {
+          font-size: 1.2em;
+        }
       }
     }
 
