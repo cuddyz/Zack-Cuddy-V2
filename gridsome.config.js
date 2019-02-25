@@ -6,5 +6,6 @@
 
 module.exports = {
   siteName: 'Zack Cuddy',
+  titleTemplate: 'Zack Cuddy',
   plugins: []
 }
