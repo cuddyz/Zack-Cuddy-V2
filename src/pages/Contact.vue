@@ -75,11 +75,11 @@ export default {
 
     form {
       text-align: center;
-      width: 50%;
+      width: 80%;
       grid-gap: 1rem;
 
-      @media (max-width: breaks(tablet)) {
-        width: 80%;
+      @media (min-width: breaks(tablet)) {
+        width: 50%;
       }
     }
 

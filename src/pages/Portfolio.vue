@@ -1,6 +1,6 @@
 <template>
     <Layout>
-        <article class="mx-4">
+        <article>
           <a v-for="edge in $page.projects.edges.reverse()" :key="edge.node.id" :href="edge.node.url" target="_blank">
             <div class="img-container mb-1" :style="{ 'background-image': `url(${edge.node.image.url})` }" :aria-label="edge.node.title" />
             <h2>{{ edge.node.title }}</h2>
@@ -34,12 +34,22 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/styles/colors.scss';
+@import '../assets/styles/breaks.scss';
 
   article {
-    margin-top: 10rem;
+    margin: 10rem 2rem 0 2rem;
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(850px, 1fr));
+    grid-template-columns: auto;
+
+    @media (min-width: breaks(phablet)) {
+      margin: 10rem 4rem 0 4rem;
+    }
+
+    @media (min-width: breaks(laptop)) {
+      grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+    }
+    
 
     a {
       background-color: white;
@@ -56,10 +66,14 @@ export default {
       
       .img-container {
         width: 100%;
-        height: 300px;
+        height: 200px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 0;
+
+        @media (min-width: breaks(phablet)) {
+          height: 300px;
+        }
       }
     }
   }
