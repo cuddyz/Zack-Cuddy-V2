@@ -14,7 +14,7 @@
           <a href="mailto:zcuddy23@gmail.com"><i class="far fa-envelope" /></a>
         </div>
       </div>
-      <div class="img-container flex-1" />
+      <img aria-label="Zack Cuddy" class="flex-1" />
     </section>
   </Layout>
 </template>
@@ -48,7 +48,7 @@ export default {
       }
     }
 
-    .img-container {
+    img {
       background-position: 50%;
       background-image: url('/images/Hero.jpg');
       background-repeat: no-repeat;
