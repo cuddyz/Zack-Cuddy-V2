@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <section class="flex">
-      <div class="f-2 flex-1 flex column flex-center">
+    <section>
+      <div class="f-2 flex column flex-center">
         <div class="flex-1 flex column flex-center w-100">
           <h1>Zack Cuddy</h1>
           <h3>Developer.</h3>
@@ -14,7 +14,9 @@
           <a href="mailto:zcuddy23@gmail.com"><i class="far fa-envelope" /></a>
         </div>
       </div>
-      <img aria-label="Zack Cuddy" class="flex-1" />
+      <div>
+        <img aria-label="Zack Cuddy" />
+      </div>
     </section>
   </Layout>
 </template>
@@ -30,6 +32,8 @@ export default {
 @import '../assets/styles/colors.scss';
 
   section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     height: 100vh;
 
     .social {
@@ -49,6 +53,8 @@ export default {
     }
 
     img {
+      height: 100%;
+      width: 100%;
       background-position: 50%;
       background-image: url('/images/Hero.jpg');
       background-repeat: no-repeat;
