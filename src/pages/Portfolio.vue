@@ -1,7 +1,7 @@
 <template>
     <Layout>
         <article class="mx-4">
-          <a v-for="edge in $page.projects.edges" :key="edge.node.id" :href="edge.node.url" target="_blank">
+          <a v-for="edge in $page.projects.edges.reverse()" :key="edge.node.id" :href="edge.node.url" target="_blank">
             <div class="img-container mb-1" :style="{ 'background-image': `url(${edge.node.image.url})` }" :aria-label="edge.node.title" />
             <h2>{{ edge.node.title }}</h2>
           </a>
