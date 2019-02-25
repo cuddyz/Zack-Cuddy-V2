@@ -23,7 +23,6 @@ query Projects {
     }
   }
 }
-
 </page-query>
 
 <script>
