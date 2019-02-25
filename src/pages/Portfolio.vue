@@ -37,7 +37,7 @@ export default {
 @import '../assets/styles/breaks.scss';
 
   article {
-    margin: 10rem 2rem 0 2rem;
+    margin: 10rem 1rem 0 1rem;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: auto;

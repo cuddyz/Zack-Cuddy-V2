@@ -1,10 +1,10 @@
 <template>
     <Layout>
-        <article class="mx-4">
+        <article>
           <section>
             <p class="pb-75">Hi I'm Zack Cuddy.  I live in St. Louis with the love of my life Kelly and our two amazing cats, Mikah and Luna.</p>
-            <p class="pb-75">Currently I am employed as a Developer at <a href="https://www.wwt.com/" target="_blank">World Wide Technology</a>.  
-               I also enjoy creating websites as a hobby, and love helping people get their new idea up off the group and running!</p>
+            <p class="pb-75">Currently I am employed as a Developer at <a href="https://www.wwt.com/" target="_blank">World Wide Technology</a>.
+              I also enjoy creating websites as a hobby, and love helping people get their new idea up off the group and running!</p>
             <p class="pb-75">My personal life concists of <span class="highlight">Craft Beer</span>, <span class="highlight">Basketball</span>, and <span class="highlight">Traveling</span>.  
               One of my favorite things to do is travel to new cities to explore their beer and NBA scene.
               So far I've been to 7 of the 30 NBA stadiums and that number grows every year!</p>
@@ -30,18 +30,37 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/styles/colors.scss';
+@import '../assets/styles/breaks.scss';
 
   article {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 10rem;
+    grid-template-columns: repeat(auto-fill, minmax(45vw, 1fr));
+    grid-gap: 1rem;
+    margin: 10rem 1rem 0 1rem;
+
+    @media (min-width: breaks(phablet)) {
+      margin: 10rem 4rem 0 4rem;
+    }
 
     section:first-child {
       color: color(black);
       background-color: color(white);
       border-radius: 5px;
       padding: 4rem;
-      font-size: 1.2em;
+      font-size: 0.8em;
+
+      @media (min-width: breaks(phone)) {
+        font-size: 1em;
+      }
+
+      @media (min-width: breaks(tablet)) {
+        font-size: 1.2em;
+      }
+
+      @media (min-width: breaks(megawide)) {
+        font-size: 1.4em;
+      }
+
 
       .highlight {
         color: color(orange);
@@ -63,15 +82,35 @@ export default {
         background-position-y: 20%;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 20rem;
-        width: 20rem;
+        height: 15rem;
+        width: 15rem;
+
+        @media (min-width: breaks(tablet)) {
+          height: 20rem;
+          width: 20rem;
+        }
+
+        @media (min-width: breaks(megawide)) {
+          height: 25rem;
+          width: 25rem;
+        }
       }
 
       &:first-child {
         img {
           background-image: url('/images/Us.jpg');
-          height: 30rem;
-          width: 30rem;
+          height: 25rem;
+          width: 25rem;
+
+          @media (min-width: breaks(tablet)) {
+            height: 30rem;
+            width: 30rem;
+          }
+
+          @media (min-width: breaks(megawide)) {
+            height: 35rem;
+            width: 35rem;
+          }
         }
       }
 
