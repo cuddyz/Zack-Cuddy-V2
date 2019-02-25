@@ -36,10 +36,10 @@ export default {
     display: grid;
     grid-template-columns: auto;
     grid-gap: 1rem;
-    margin: 7rem 1rem 0 1rem;
+    margin: 7rem 1rem 1rem 1rem;
 
     @media (min-width: breaks(phablet)) {
-      margin: 10rem 4rem 0 4rem;
+      margin: 10rem 4rem 1rem 4rem;
     }
 
     @media (min-width: breaks(laptop)) {

@@ -42,13 +42,13 @@ export default {
 @import '../assets/styles/breaks.scss';
 
   article {
-    margin: 7rem 1rem 0 1rem;
+    margin: 7rem 1rem 1rem 1rem;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: auto;
 
     @media (min-width: breaks(phablet)) {
-      margin: 10rem 4rem 0 4rem;
+      margin: 10rem 4rem 1rem 4rem;
     }
 
     @media (min-width: breaks(laptop)) {

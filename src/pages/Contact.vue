@@ -72,6 +72,7 @@ export default {
     grid-gap: 1rem;
     justify-items: center;
     align-content: center;
+    margin: 3rem 1rem 1rem 1rem;
 
     form {
       text-align: center;
@@ -86,7 +87,7 @@ export default {
     input,
     textarea {
       font-size: 1.2rem;
-      margin: 1rem;
+      margin: 1rem 0;
 
       &.error {
         border-color: color(redDark);
