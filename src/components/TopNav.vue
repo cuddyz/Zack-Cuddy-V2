@@ -54,10 +54,18 @@ export default {
             a {
                 padding-left: 1rem;
                 text-transform: uppercase;
-                font-size: 1.1em;
+                font-size: 0.9em;
 
                 &:hover {
-                    font-size: 1.2em;
+                    font-size: 1em;
+                }
+            }
+
+            @media (min-width: breaks(phablet)) {
+                font-size: 1.1em;
+
+                 &:hover {
+                    font-size: 1.3em;
                 }
             }
 

@@ -54,10 +54,10 @@ export default {
     }
 
     .info {
-      font-size: 0.8em;
+      font-size: 0.5em;
 
       @media (min-width: breaks(phablet)) {
-        font-size: 0.9em;
+        font-size: 0.7em;
       }
       
       @media (min-width: breaks(tablet)) {
@@ -73,11 +73,22 @@ export default {
     }
 
     a {
-      font-size: 1.0em;
-      margin: 0 1.5rem;
+      font-size: 0.9em;
+      margin: 0 1.25rem;
 
       &:hover {
-        font-size: 1.1em;
+        font-size: 1em;
+      }
+    }
+
+    @media (min-width: breaks(phablet)) {
+      a {
+        font-size: 1.0em;
+        margin: 0 1.5rem;
+
+        &:hover {
+          font-size: 1.1em;
+        }
       }
     }
 
