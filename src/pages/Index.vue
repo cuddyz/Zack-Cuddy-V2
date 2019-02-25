@@ -30,11 +30,28 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/styles/colors.scss';
+@import '../assets/styles/breaks.scss';
 
   section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
+    align-content: center;
     height: 100vh;
+
+    @media (min-width: breaks(tablet)) and (max-height: 949px) {
+      grid-template-columns: 1fr 1fr;
+      align-content: inherit;
+    }
+
+    @media (min-width: breaks(laptop)) and (min-height: 950px) {
+      grid-template-columns: 1fr 1fr;
+      align-content: inherit;
+    }
+
+    @media (min-width: breaks(desktop)) and (min-height: 1250px) {
+      grid-template-columns: 1fr 1fr;
+      align-content: inherit;
+    }
 
     .social {
       position: fixed;
@@ -53,12 +70,27 @@ export default {
     }
 
     img {
+      display: none;
       height: 100%;
       width: 100%;
-      background-position: 50%;
       background-image: url('/images/Hero.jpg');
       background-repeat: no-repeat;
       background-size: cover;
+
+      @media (min-width: breaks(tablet)) and (max-height: 949px) {
+        background-position: 50%;
+        display: block;
+      }
+
+      @media (min-width: breaks(laptop)) and (min-height: 950px) {
+        background-position: 50%;
+        display: block;
+      }
+
+      @media (min-width: breaks(desktop)) and (min-height: 1250px) {
+        background-position: 50%;
+        display: block;
+      }
     }
   }
 </style>
