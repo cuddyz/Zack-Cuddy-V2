@@ -32,8 +32,9 @@ export default {
     computed: {
       projects: function() {
         let projects = this.$page.projects.edges
+        console.log(projects)
         return projects.sort(function(a, b) {
-          return (a.order < b.order) ? 1 : -1
+          return (a.node.order < b.node.order) ? -1 : 1
         })
       }
     }
