@@ -4,9 +4,9 @@
     <h1 class="pt-1 pb-1">Need help with a project?</h1>
     <form id="contact" name="contact" method="POST" action="/contact" data-netlify="true">
       <input name="form-name" value="contact" type="hidden" />
-      <input name="name" :class="{'error': errors.fields && !contact.name }" v-model="contact.name" type="text" placeholder="Full Name" />
-      <input name="email" :class="{'error': (errors.fields && !contact.email) || errors.email }" v-model="contact.email" type="email" placeholder="Email" />
-      <textarea name="details" :class="{'error': errors.fields && !contact.details }" v-model="contact.details" placeholder="Details" />
+      <input name="name" label="Full Name" :class="{'error': errors.fields && !contact.name }" v-model="contact.name" type="text" placeholder="Full Name" />
+      <input name="email" label="Email" :class="{'error': (errors.fields && !contact.email) || errors.email }" v-model="contact.email" type="email" placeholder="Email" />
+      <textarea name="details" label="Details" :class="{'error': errors.fields && !contact.details }" v-model="contact.details" placeholder="Details" />
       <button class="hidden" type="submit">Send</button>
     </form>
     <button @click="submit">Submit</button>
