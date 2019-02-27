@@ -8,5 +8,12 @@ module.exports = {
   siteName: 'Zack Cuddy',
   titleTemplate: 'Zack Cuddy',
   siteUrl: 'https://zack-cuddy.com',
-  plugins: []
+  plugins: [
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-123361165-1'
+      }
+    }
+  ]
 }
