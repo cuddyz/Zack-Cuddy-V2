@@ -16,6 +16,7 @@ query Projects {
       node {
         title
         url
+        order
         image {
           url
         }
