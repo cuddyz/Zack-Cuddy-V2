@@ -2,7 +2,7 @@
 <Layout>
   <article>
     <h1 class="pt-1 pb-1">Need help with a project?</h1>
-    <form id="contactForm" name="contactForm" method="POST" netlify>
+    <form id="contactForm" name="contactForm" method="POST" data-netlify="true">
       <input name="form-name" value="contactForm" type="hidden" />
       <input name="name" :class="{'error': errors.fields && !contact.name }" v-model="contact.name" type="text" placeholder="Full Name" />
       <input name="email" :class="{'error': (errors.fields && !contact.email) || errors.email }" v-model="contact.email" type="email" placeholder="Email" />
