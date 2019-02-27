@@ -58,6 +58,8 @@ button {
   color: color(greyDark);
     &:hover {
         cursor: pointer;
+        background-color: color(green);
+        border-color: color(greenDark);
     }
     &:active {
         &:not(:disabled) {
