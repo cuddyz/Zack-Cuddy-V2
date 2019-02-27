@@ -7,11 +7,11 @@
           <h3>Developer.</h3>
         </div>
         <div class="social">
-          <a href="https://www.facebook.com/zack.cuddy" target="_blank"><i class="fab fa-facebook" /></a>
-          <a href="https://twitter.com/zack_cuddy" target="_blank"><i class="fab fa-twitter" /></a>
-          <a href="https://www.linkedin.com/in/zcuddy/" target="_blank"><i class="fab fa-linkedin-in" /></a>
-          <a href="https://github.com/cuddyz" target="_blank"><i class="fab fa-github" /></a>
-          <a href="mailto:zcuddy23@gmail.com"><i class="far fa-envelope" /></a>
+          <a href="https://www.facebook.com/zack.cuddy" rel="noreferrer" target="_blank"><i class="fab fa-facebook" /></a>
+          <a href="https://twitter.com/zack_cuddy" rel="noreferrer" target="_blank"><i class="fab fa-twitter" /></a>
+          <a href="https://www.linkedin.com/in/zcuddy/" rel="noreferrer" target="_blank"><i class="fab fa-linkedin-in" /></a>
+          <a href="https://github.com/cuddyz" rel="noreferrer" target="_blank"><i class="fab fa-github" /></a>
+          <a href="mailto:zcuddy23@gmail.com" rel="noreferrer"><i class="far fa-envelope" /></a>
         </div>
       </div>
       <div>

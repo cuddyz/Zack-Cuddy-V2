@@ -1,7 +1,7 @@
 <template>
     <Layout>
         <article>
-          <a v-for="project in projects" :key="project.node.id" :href="project.node.url" target="_blank">
+          <a v-for="project in projects" :key="project.node.id" :href="project.node.url" rel="noreferrer" target="_blank">
             <div class="img-container mb-1" :style="{ 'background-image': `url(${project.node.image.url})` }" :aria-label="project.node.title" />
             <h2>{{ project.node.title }}</h2>
           </a>

@@ -3,7 +3,7 @@
         <article>
           <section>
             <p class="pb-75">Hi I'm Zack Cuddy.  I live in St. Louis with the love of my life Kelly and our two amazing cats, Mikah and Luna.</p>
-            <p class="pb-75">Currently I am employed as a Developer at <a href="https://www.wwt.com/" target="_blank">World Wide Technology</a>.
+            <p class="pb-75">Currently I am employed as a Developer at <a href="https://www.wwt.com/" rel="noreferrer" target="_blank">World Wide Technology</a>.
               I also enjoy creating websites as a hobby, and love helping people get their new idea up off the group and running!</p>
             <p class="pb-75">My personal life consists of <span class="highlight">Craft Beer</span>, <span class="highlight">Basketball</span>, and <span class="highlight">Traveling</span>.  
               One of my favorite things to do is travel to new cities to explore their beer and NBA scene.
