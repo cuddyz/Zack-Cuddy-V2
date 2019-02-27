@@ -11,11 +11,11 @@
           </section>
           <section>
             <div class="img-container flex flex-center">
-              <img aria-label="Zack and Kelly" />
+              <div class="bg-img" aria-label="Zack and Kelly" />
             </div>
             <div class="img-container flex flex-center">
-              <img aria-label="Luna" />
-              <img aria-label="Mikah" />
+              <div class="bg-img" aria-label="Luna" />
+              <div class="bg-img" aria-label="Mikah" />
             </div>
           </section>
         </article>
@@ -85,7 +85,7 @@ export default {
 
     .img-container {
 
-      img {
+      .bg-img {
         background-position-y: 20%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -109,7 +109,7 @@ export default {
       }
 
       &:first-child {
-        img {
+        .bg-img {
           background-image: url('/images/Us.jpg');
           height: 20rem;
           width: 20rem;
@@ -132,10 +132,10 @@ export default {
       }
 
       &:nth-child(2) {
-        img:first-child {
+        .bg-img:first-child {
           background-image: url('/images/Luna.jpg');
         }
-        img:nth-child(2) {
+        .bg-img:nth-child(2) {
           background-image: url('/images/Mikah.jpg');
         }
       }
