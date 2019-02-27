@@ -3,7 +3,7 @@
         <article>
           <section>
             <p class="pb-75">Hi I'm Zack Cuddy.  I live in St. Louis with the love of my life Kelly and our two amazing cats, Mikah and Luna.</p>
-            <p class="pb-75">Currently I am employed as a Developer at <a href="https://www.wwt.com/" target="_blank">World Wide Technology</a>.
+            <p class="pb-75">Currently I am employed as a Developer at <a href="https://www.wwt.com/" rel="noreferrer" target="_blank">World Wide Technology</a>.
               I also enjoy creating websites as a hobby, and love helping people get their new idea up off the group and running!</p>
             <p class="pb-75">My personal life consists of <span class="highlight">Craft Beer</span>, <span class="highlight">Basketball</span>, and <span class="highlight">Traveling</span>.  
               One of my favorite things to do is travel to new cities to explore their beer and NBA scene.
@@ -11,11 +11,11 @@
           </section>
           <section>
             <div class="img-container flex flex-center">
-              <img aria-label="Zack and Kelly" />
+              <div class="bg-img" aria-label="Zack and Kelly" />
             </div>
             <div class="img-container flex flex-center">
-              <img aria-label="Luna" />
-              <img aria-label="Mikah" />
+              <div class="bg-img" aria-label="Luna" />
+              <div class="bg-img" aria-label="Mikah" />
             </div>
           </section>
         </article>
@@ -85,7 +85,7 @@ export default {
 
     .img-container {
 
-      img {
+      .bg-img {
         background-position-y: 20%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -109,7 +109,7 @@ export default {
       }
 
       &:first-child {
-        img {
+        .bg-img {
           background-image: url('/images/Us.jpg');
           height: 20rem;
           width: 20rem;
@@ -132,10 +132,10 @@ export default {
       }
 
       &:nth-child(2) {
-        img:first-child {
+        .bg-img:first-child {
           background-image: url('/images/Luna.jpg');
         }
-        img:nth-child(2) {
+        .bg-img:nth-child(2) {
           background-image: url('/images/Mikah.jpg');
         }
       }

@@ -8,6 +8,7 @@ module.exports = {
   siteName: 'Zack Cuddy',
   titleTemplate: 'Zack Cuddy',
   siteUrl: 'https://zack-cuddy.com',
+  siteDescription: 'Zack Cuddy - Developer.  Bringing VueJS Apps to a site near you!',
   plugins: [
     {
       use: '@gridsome/plugin-google-analytics',

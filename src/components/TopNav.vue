@@ -1,7 +1,7 @@
 <template>
     <nav class="mx-2 flex align-center">
-        <g-link :to="{ name: 'home' }">
-            <g-image class="logo" src="/images/logo_transparent.png" width="100px" />
+        <g-link :to="{ name: 'home' }" aria-label="Zack Cuddy">
+            <g-image class="logo" src="/images/logo_transparent.png" alt="Zack Cuddy" aria-hidden="true" width="100px" />
         </g-link>
         <div class="links">
             <g-link :to="{ name: 'about' }">About</g-link>
