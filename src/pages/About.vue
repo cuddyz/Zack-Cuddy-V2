@@ -70,15 +70,15 @@ export default {
 
 
       .highlight {
-        color: color(orange);
+        color: color(orangeDark);
       }
 
       a {
-        color: color(blue);
+        color: color(blueDark);
 
         &:hover {
           cursor: pointer;
-          color: color(blueDark);
+          color: darken(color(blueDark), 10%);
         }
       }
     }

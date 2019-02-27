@@ -61,7 +61,7 @@ export default {
 
     a {
       background-color: white;
-      color: color(blue);
+      color: color(blueDark);
       text-align: center;
       box-shadow: 0 0.25rem 0.5rem 0 rgba(color(greyLight), .06);
       padding-bottom: 1rem;
@@ -69,7 +69,7 @@ export default {
       &:hover {
         box-shadow: 0 1rem 1.5rem 0 rgba(color(greyLight), .1), 0 0.25rem 0.5rem 0 rgba(color(greyLight), .06);
         transform: scale(1.005);
-        color: color(blueDark);
+        color: darken(color(blueDark), 10%);
       }
       
       .img-container {
