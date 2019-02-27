@@ -2,8 +2,8 @@
 <Layout>
   <article>
     <h1 class="pt-1 pb-1">Need help with a project?</h1>
-    <form id="contactForm" name="contactForm" method="POST" data-netlify="true">
-      <input name="form-name" value="contactForm" type="hidden" />
+    <form id="contact" name="contact" method="POST" action="/contact" data-netlify="true">
+      <input name="form-name" value="contact" type="hidden" />
       <input name="name" :class="{'error': errors.fields && !contact.name }" v-model="contact.name" type="text" placeholder="Full Name" />
       <input name="email" :class="{'error': (errors.fields && !contact.email) || errors.email }" v-model="contact.email" type="email" placeholder="Email" />
       <textarea name="details" :class="{'error': errors.fields && !contact.details }" v-model="contact.details" placeholder="Details" />
@@ -39,7 +39,7 @@ export default {
         return
       }
 
-      document.getElementById('contactForm').submit()
+      document.getElementById('contact').submit()
     },
     validForm: function() {
       if (!this.contact.name || !this.contact.email || !this.contact.details) {
