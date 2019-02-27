@@ -30,7 +30,10 @@ export default {
     name: 'Portfolio',
     computed: {
       projects: function() {
-        return this.$page.projects.edges.reverse()
+        let projects = this.$page.projects.edges
+        return projects.sort(function(a, b) {
+          return (a.order < b.order) ? 1 : -1
+        })
       }
     }
 }
@@ -43,7 +46,7 @@ export default {
   article {
     margin: 7rem 1rem 1rem 1rem;
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     grid-template-columns: auto;
 
     @media (min-width: breaks(phablet)) {
