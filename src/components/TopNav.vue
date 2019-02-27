@@ -59,29 +59,29 @@ export default {
                 &:hover {
                     font-size: 1em;
                 }
-            }
 
-            @media (min-width: breaks(phablet)) {
-                font-size: 1.1em;
+                @media (min-width: breaks(phablet)) {
+                    font-size: 1.1em;
 
-                 &:hover {
+                    &:hover {
+                        font-size: 1.3em;
+                    }
+                }
+
+                @media (min-width: breaks(laptop)) {
                     font-size: 1.3em;
+
+                    &:hover {
+                        font-size: 1.4em;
+                    }
                 }
-            }
 
-            @media (min-width: breaks(laptop)) {
-                font-size: 1.3em;
+                @media (min-width: breaks(desktop)) {
+                    font-size: 1.5em;
 
-                 &:hover {
-                    font-size: 1.4em;
-                }
-            }
-
-            @media (min-width: breaks(desktop)) {
-                font-size: 1.5em;
-
-                 &:hover {
-                    font-size: 1.6em;
+                    &:hover {
+                        font-size: 1.6em;
+                    }
                 }
             }
         }

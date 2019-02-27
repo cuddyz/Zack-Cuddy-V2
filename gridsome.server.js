@@ -47,7 +47,8 @@ module.exports = function (api) {
           title: item.fields.title,
           fields: {
             url: item.fields.url,
-            image: store.createReference('ProjectAssets', item.fields.image.sys.id)
+            image: store.createReference('ProjectAssets', item.fields.image.sys.id),
+            order: item.fields.order
           }
         })
       }
