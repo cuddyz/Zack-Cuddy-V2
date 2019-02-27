@@ -2,14 +2,14 @@
 <Layout>
   <article>
     <h1 class="pt-1 pb-1">Need help with a project?</h1>
-    <form id="contactForm" name="contactForm" method="POST" netlify>
-      <input name="form-name" value="contactForm" type="hidden" />
+    <form id="contact" name="contact" method="POST" action="/contact" data-netlify="true">
+      <input name="form-name" value="contact" type="hidden" />
       <input name="name" :class="{'error': errors.fields && !contact.name }" v-model="contact.name" type="text" placeholder="Full Name" />
       <input name="email" :class="{'error': (errors.fields && !contact.email) || errors.email }" v-model="contact.email" type="email" placeholder="Email" />
       <textarea name="details" :class="{'error': errors.fields && !contact.details }" v-model="contact.details" placeholder="Details" />
       <button class="hidden" type="submit">Send</button>
     </form>
-    <button @click="submit" class="dark">Submit</button>
+    <button @click="submit">Submit</button>
     <h4 class="error" v-if="errors.fields">Make sure all the fields are filled out.</h4>
     <h4 class="error" v-if="errors.email">That email doesn't look valid to me.</h4>
     <h4 class="error" v-if="errors.post">Uh oh! Something went wrong with the POST. I console.log() it if you want to take a look!</h4>
@@ -39,7 +39,7 @@ export default {
         return
       }
 
-      document.getElementById('contactForm').submit()
+      document.getElementById('contact').submit()
     },
     validForm: function() {
       if (!this.contact.name || !this.contact.email || !this.contact.details) {
