@@ -111,22 +111,22 @@ export default {
       &:first-child {
         .bg-img {
           background-image: url('/images/Us.jpg');
+          height: 15rem;
+          width: 15rem;
+
+        @media (min-width: breaks(phablet)) {
           height: 20rem;
           width: 20rem;
+        }
 
-          @media (min-width: breaks(phablet)) {
-            height: 25rem;
-            width: 25rem;
-         }
-
-          @media (min-width: breaks(tablet)) {
-            height: 30rem;
-            width: 30rem;
-          }
+        @media (min-width: breaks(tablet)) {
+          height: 25rem;
+          width: 25rem;
+        }
 
           @media (min-width: breaks(megawide)) {
-            height: 35rem;
-            width: 35rem;
+            height: 30rem;
+            width: 30rem;
           }
         }
       }
