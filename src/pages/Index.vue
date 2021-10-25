@@ -7,6 +7,7 @@
           <h3>Developer.</h3>
         </div>
         <div class="social">
+          <a href="https://gitlab.com/cuddyz" rel="noreferrer" target="_blank" aria-label="GitLab"><i class="fab fa-gitlab" aria-hidden="true" /></a>
           <a href="https://github.com/cuddyz" rel="noreferrer" target="_blank" aria-label="Github"><i class="fab fa-github" aria-hidden="true" /></a>
           <a href="https://www.linkedin.com/in/zcuddy/" rel="noreferrer" target="_blank" aria-label="Linkedin"><i class="fab fa-linkedin-in" aria-hidden="true" /></a>
           <a href="mailto:zcuddy23@gmail.com" rel="noreferrer" aria-label="Email"><i class="far fa-envelope" aria-hidden="true" /></a>
